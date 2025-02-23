@@ -1,0 +1,194 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+/* style the form container */
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    align-items: center;
+    background: #ffeeab;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* style the text inputs */
+input[type="text"], input[type="email"] {
+    width: 250px;
+    height: 35px;
+    margin: 10px 0;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    align-items: center;
+}
+
+/* style the button */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    
+    width: 260px;
+    height: 40px;
+
+    border: black;
+    cursor: pointer;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #218838;
+}
+
+/* account for overflow*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* account for overflow*/
+
+
+/* menu buttons*/
+.menu-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+}
+
+.menu-button {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.menu-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-container a img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.menu-container a img:hover {
+    transform: scale(1.2); /* enlarges by 20% when hover */
+}
+
+/* menu buttons*/
+
+
+/* put text next to images*/
+.image-text-container {
+    display: flex;
+    align-items: center;  /* vertically center the text*/
+    gap: 20px;  /* space between image and text */
+}
+
+.side-image {
+    width: 200px;
+}
+
+.side-text {
+    margin: 0;  /* removes default paragraph margin */
+}
+
+/* put text next to images*/
+
+
+
+
+/* Enter button*/
+
+.enter-button {
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.enter-button img {
+    width: 100%;
+    height: 100%;
+}
+
+.enter-button b img {
+    width: 15px;
+    height: 7px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.enter-button b img:hover {
+    transform: scale(1.2); /* enlarges by 20% when hover */
+}
+
+
+.clothing-button:nth-child(1) { background-image: url('clothes1.png'); }
+.clothing-button:nth-child(2) { background-image: url('clothes2.png'); }
+.clothing-button:nth-child(3) { background-image: url('clothes3.png'); }
+.clothing-button:nth-child(4) { background-image: url('clothes4.png'); }
+.clothing-button:nth-child(5) { background-image: url('clothes5.png'); }
+.clothing-button:nth-child(6) { background-image: url('clothes6.png'); }
+.clothing-button:nth-child(7) { background-image: url('clothes7.png'); }
+.clothing-button:nth-child(8) { background-image: url('clothes8.png'); }
+.clothing-button:nth-child(9) { background-image: url('clothes9.png'); }
+.clothing-button:nth-child(10) { background-image: url('clothes10.png'); }
+.clothing-button:nth-child(11) { background-image: url('clothes11.png'); }
+.clothing-button:nth-child(12) { background-image: url('clothes12.png'); }
+
+
+.clothing-button {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+
+.clothing-button:hover {
+    opacity: 0.7;
+}
+.clothingbutton-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
